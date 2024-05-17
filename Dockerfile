@@ -13,6 +13,8 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
+ENV GENERATE_SOURCEMAP=false
+
 # Build the React app
 RUN npm run build
 
